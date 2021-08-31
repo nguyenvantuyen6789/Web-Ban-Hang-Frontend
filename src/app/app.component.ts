@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'Web-Ban-Hang-Frontend';
+  title = 'Website Ban Hang';
 }

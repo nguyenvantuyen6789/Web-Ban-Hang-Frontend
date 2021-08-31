@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { BodyComponent } from './body/body.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { BodyComponent } from './body/body.component';
     HeaderComponent,
     FooterComponent,
     MenuComponent,
-    BodyComponent
+    BodyComponent,
+    ProductListComponent
   ],
 
   imports: [
@@ -24,4 +26,5 @@ import { BodyComponent } from './body/body.component';
   bootstrap: [AppComponent]
   
 })
+
 export class AppModule { }

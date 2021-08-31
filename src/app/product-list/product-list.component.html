@@ -1,6 +1,11 @@
 <div>
     <ul>
-        <li></li>
+        <li *ngFor="let obj of productinComponent">
+          <p>{{obj.name}}</p>
+          <img [src]="obj.img" [alt]="obj.name" width="200" height="200">
+          <p>{{obj.price}}</p>
+          <p>{{obj.description}}</p>
+        </li>
     </ul>
                 <!-- <img [src]="obj.thumbnail" [alt]="obj.name" />
               </a>

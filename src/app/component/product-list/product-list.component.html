@@ -1,10 +1,11 @@
 <div>
     <ul>
-        <li *ngFor="let obj of productinComponent">
+        <li *ngFor="let obj of productInComponent">
           <p>{{obj.name}}</p>
           <img [src]="obj.img" [alt]="obj.name" width="200" height="200">
           <p>{{obj.price}}</p>
           <p>{{obj.description}}</p>
+          <p *ngIf="obj.title">{{obj.title}} Show the title if it's exist</p>
         </li>
     </ul>
                 <!-- <img [src]="obj.thumbnail" [alt]="obj.name" />

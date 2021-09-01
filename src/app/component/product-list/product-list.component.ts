@@ -4,9 +4,10 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-product-list',
   templateUrl: './product-list.component.html'
 })
+
 export class ProductListComponent implements OnInit {
 
-  @Input() productinComponent:any;
+  @Input() productInComponent:any;
   constructor() { }
 
   ngOnInit(): void {

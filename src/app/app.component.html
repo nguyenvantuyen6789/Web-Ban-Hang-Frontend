@@ -3,6 +3,6 @@
 <app-menu></app-menu>
 
 <app-body></app-body>
-<app-product-list [productInComponent]="listProduct"></app-product-list>
+<app-product-list [productInComponent]="listProduct" (onRemoveProduct)="removeProduct($event)"></app-product-list>
 
 <app-footer></app-footer>

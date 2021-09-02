@@ -7,7 +7,7 @@ import { Product } from './product.model';
 })
 
 export class AppComponent {
-  title = 'Website Ban Hang';
+  title = 'Website Bán Hàng';
 
   listProduct: Product[] = [
     {
@@ -19,7 +19,7 @@ export class AppComponent {
     },
 
     {
-      id: 'abc',
+      id: '2',
       name: 'PRODUCT 2 Ô Tô',
       description: 'Description for product item number 2',
       img: 'https://www.w3schools.com/html/img_chania.jpg',
@@ -27,4 +27,14 @@ export class AppComponent {
     },
   ];
 
+  removeProduct(productId: any) {
+    const index = this.listProduct.findIndex((obj: {id: any;}) => obj.id === productId);
+
+    this.listProduct.splice(index, 1);
+    console.log("index: " + index);
+    
+    
+  }
+
+  
 }

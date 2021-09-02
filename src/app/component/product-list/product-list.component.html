@@ -13,7 +13,7 @@
             <p *ngIf="obj.title">{{obj.title}}</p>
           </div>
         </a>
-        <button class="btn btn-primary">Xoá</button>
+        <button class="btn btn-primary" (click)="removeProductOnList(obj.id)">Xoá</button>
       </div>
     </div>
 
